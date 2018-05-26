@@ -68,6 +68,6 @@ io.on('connection', function (socket) {
   });
 });
 
-server.listen(8081, function () {
+server.listen(process.env.PORT || 5000, function () {
   console.log(`Listening on ${server.address().port}`);
 });
